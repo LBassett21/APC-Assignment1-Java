@@ -1,9 +1,8 @@
 import  java.util.Scanner;
 
 public class admin extends user{
-
     public void addRemoveCourse(String crn, boolean ar){
-        if (ar == true){
+        if (ar){
             Scanner userInput = new Scanner(System.in);
             System.out.println("You added course: " + crn);
             System.out.println("What is the course name?");
@@ -16,9 +15,8 @@ public class admin extends user{
             System.out.println("You removed course: " + crn);
         }
     }
-
     public void addRemoveUser(String id, boolean ar){
-        if (ar == true){
+        if (ar){
             Scanner userInput = new Scanner(System.in);
             System.out.println("You added user: " + id);
             System.out.println("What is the students first name?");
@@ -34,19 +32,16 @@ public class admin extends user{
             System.out.println("You removed user: " + id);
         }
     }
-
     public void addRemoveStudentCourse(String id, String crn, boolean ar){
-        if (ar == true){
+        if (ar){
             System.out.println("You added course: " + crn + " for student: " + id);
         } else {
             System.out.println("You removed course: " + crn + " for student: " + id);
         }
     }
-
     public String printRoster(){
         return "Printer roster... kinda";
     }
-
     public String printSchedule(){
         return "Printed schedule... kinda";
     }
